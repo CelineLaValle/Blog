@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoHeader {
+    width: 147px;
+    height: 113px;
+    margin-left: 40px;
+}
+
+.title {
+    font-family: "Jacquarda Bastarda 9";
+    font-size: 96px;
+    margin: 0;
+}
+
+.nav {
+    font-family: "Jacquarda Bastarda 9";
+    font-size: 24px;
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+.nav:visited {
+    color: #000000;
+}

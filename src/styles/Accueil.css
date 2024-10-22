@@ -1,0 +1,87 @@
+ .containerAccueil {
+   padding: 20px;
+   width: 100%;
+   margin: auto;
+}
+
+.titleArticle {
+    font-family: "Jacquarda Bastarda 9";
+    font-size: 48px;
+    text-align: center;
+}
+
+.articlesContainer {
+    margin: 0 80px 0 80px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.articleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.articleTitle {
+    margin-bottom: 10px;
+}
+
+.cardArticle {
+    background-color: #CABCBC;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-height: 450px;
+    min-height: 450px;
+    height: 60%;
+    width: 60%;
+    overflow: hidden;  
+}
+
+span {
+    display: block;
+    overflow: hidden;
+    line-clamp: 10;
+}
+
+.containerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    background-color: #CABCBC;
+    width: 196px;
+    height: 32px;
+    font-family: "Jacquarda Bastarda 9";
+    font-size: 16px;
+}
+
+.addButton:visited {
+    color: #000000;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
