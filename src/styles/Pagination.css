@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent; 
+    font-size: 24px;
+    padding: 10px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.pageInfo {
+    margin: 0 15px;
+    padding: 3px 10px; 
+    border: 1px solid #000;
+    font-size: 14px;
+    background-color: #CABCBC;
+}

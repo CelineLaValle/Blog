@@ -1,14 +1,15 @@
 import React from 'react';
+import '../styles/Pagination.css'
 
 const Pagination = ({ currentPage, totalPages, nextPage, prevPage }) => {
   return (
     <div className='pagination'>
       <button onClick={prevPage} disabled={currentPage === 1}>
-        &#60; Précédent
+        &#60; 
       </button>
-      <span>{currentPage} / {totalPages}</span>
+      <span className='pageInfo'>{currentPage} / {totalPages}</span>
       <button onClick={nextPage} disabled={currentPage === totalPages}>
-        Suivant &#62;
+        &#62;
       </button>
     </div>
   );
