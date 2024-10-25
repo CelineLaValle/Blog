@@ -50,29 +50,34 @@ function AddArticle () {
         };
       
         return (
-          <form className='articleForm' onSubmit={handleSubmit}>
-            <div className='articleTitre'>
-              <input className='inputField'
-                type="text"
-                id="title"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)} // Met à jour l'état du titre
-                placeholder="Entrez le titre de l'article"
-              />
-            </div>
-      
-            <div className='articleContenu'>
-              <textarea className='textArea' rows="20" cols="33"
-                id="content"
-                value={content}
-                onChange={(e) => setContent(e.target.value)} // Met à jour l'état du contenu
-                placeholder="Entrez le contenu de l'article"
-              />
-            </div>
-      
-            <button className='submitButton' type="submit">Valider</button>
-          </form>
-        );
-      }
+          <div>
+              <h2 className="articleH2">Ajouter</h2>
+              <form className="articleForm" onSubmit={handleSubmit}>
+                  <div className="articleTitre">
+                      <input 
+                          className="inputField"
+                          type="text"
+                          id="title"
+                          value={title}
+                          onChange={(e) => setTitle(e.target.value)} // Met à jour l'état du titre
+                          placeholder="Entrez le titre de l'article"
+                      />
+                  </div>
+                  <div className="articleContenu">
+                      <textarea 
+                          className="textArea"
+                          rows="20" 
+                          cols="33"
+                          id="content"
+                          value={content}
+                          onChange={(e) => setContent(e.target.value)} // Met à jour l'état du contenu
+                          placeholder="Entrez le contenu de l'article"
+                      />
+                  </div>
+                  <button className="submitButton" type="submit">Valider</button>
+              </form>
+          </div>
+      );      
+    }
 
       export default AddArticle

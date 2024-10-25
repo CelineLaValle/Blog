@@ -1,26 +1,3 @@
-/* .articleForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.articleTitre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: 45px;
-}
-
-.articleContenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: 450px;
-} */
-
 .articleForm {
     display: flex;
     flex-direction: column; 
@@ -87,4 +64,20 @@
 
 .submitButton:hover {
     background-color: #686868;
+}
+
+.articlePolice {
+    font-family: "Jacquarda Bastarda 9";
+    font-size: 48px;
+}
+
+.textPolice {
+    width: 715px;
+    font-family: Itim;
+    font-size: 24px;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    background-color: #CABCBC;
+    padding: 20px;
 }

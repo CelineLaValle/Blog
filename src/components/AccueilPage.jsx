@@ -16,9 +16,10 @@ function AccueilPage() {
 
     const response = await fetch('http://localhost:4000/api/article');
     const data = await response.json();
+    console.log('Données récupérées :', data);
     setArticles(data);
     if (!response.ok) {
-      throw new Error('Erreur de serveur: ${response.status}');
+      throw new Error(`Erreur de serveur: ${response.status}`);
     }
   }
 
@@ -72,9 +73,16 @@ function AccueilPage() {
               prevPage={prevPage} 
               />
       <div className='articlesContainer'>
-        <article className='articles'> {currentArticles.map(item => <div className='articleDiv' key={item.id}> <span className='articleTitle'> {item.title} </span> 
+        <article className='articles'> {currentArticles.map(item => <div className='articleDiv' key={item._id}> 
+        <span className='articleTitle'> {item.title} </span> 
         <span className='cardArticle'> {item.content} </span> 
-        <button onClick={() => deleteArticle(item.id)}>Supprimer</button> </div>)} </article> 
+        <div className='buttonContainer'>
+        <Link to={`/article/${item._id}`} className='articleButton'>Lire</Link>
+        <button className='articleButton' onClick={() => deleteArticle(item._id)}>Supprimer</button> 
+        <Link to={`/edit/${item._id}`} className='articleButton'>Modifier</Link> 
+        </div>
+        </div>)}
+        </article> 
       </div>
       <div className='containerButton'>
         <Link to="/AddArticle" className='addButton'>Ajouter un article</Link>
